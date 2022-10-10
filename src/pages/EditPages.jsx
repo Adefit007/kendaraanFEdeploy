@@ -158,8 +158,8 @@ export default function EditPages() {
                       required
                     >
                       <option disabled>Pilih Bahan Bakar</option>
-                      <option value="Bensin">Bensin</option>
                       <option value="Solar">Solar</option>
+                      <option value="Bensin">Bensin</option>
                       <option value="Diesel">Diesel</option>
                     </select>
                   </Form.Group>
