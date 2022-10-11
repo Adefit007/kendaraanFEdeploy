@@ -127,6 +127,7 @@ export default function AddPages() {
                       <option value="Hitam">Hitam</option>
                       <option value="Biru">Biru</option>
                       <option value="Abu-abu">Abu-abu</option>
+                      <option value="Hijau">Hijau</option>
                     </select>
                   </Form.Group>
                   <Form.Group className="mb-3">
