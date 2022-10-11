@@ -75,6 +75,7 @@ export default function EditPages() {
                       id="noreg"
                       value={form.noreg}
                       onChange={handleChange}
+                      disabled
                     />
                   </Form.Group>
                   <Form.Group className="mb-3">
