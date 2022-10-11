@@ -159,7 +159,7 @@ export default function Monitoring() {
                       ? "abu text-secondary"
                       : item.colour === "Hitam"
                       ? "hitam text-dark"
-                      : ""
+                      : "hijau text-success"
                   }
                 >
                   {item.colour}
