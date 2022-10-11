@@ -28,8 +28,8 @@ export default function Monitoring() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleDelete = (id) => {
-    setIdDelete(id);
+  const handleDelete = (noreg) => {
+    setIdDelete(noreg);
     handleShow();
   };
 
@@ -37,9 +37,9 @@ export default function Monitoring() {
     setConfirmDelete(true);
   };
 
-  const deleteById = useMutation(async (id) => {
+  const deleteById = useMutation(async (noreg) => {
     try {
-      await API.delete("/kendaraan/" + id);
+      await API.delete("/kendaraan/" + noreg);
       refetch();
     } catch (error) {
       console.log(error);
@@ -57,8 +57,8 @@ export default function Monitoring() {
   const handleDetail = (id) => {
     navigate("/detail-data/" + id);
   };
-  const handleUpdate = (id) => {
-    navigate("/edit-data/" + id);
+  const handleUpdate = (noreg) => {
+    navigate("/edit-data/" + noreg);
   };
 
   const [filter, setFilter] = useState("");
